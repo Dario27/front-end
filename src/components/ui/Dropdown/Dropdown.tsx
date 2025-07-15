@@ -17,23 +17,18 @@ export const Dropdown: React.FC<DropdownProps> = ({ options, label, ...props }) 
   const [value, setValue] = useState('');
 
   const handleChange = (event: SelectChangeEvent) => {
-    setValue(event.target.value as string);
+    setValue(event.target.value);
+    console.log('Selected value:', event.target.value);
     if (props.onChange) {
       props.onChange(event, props.children);
     }
   };
 
+  //{({handleChange }) => (
   return (
     <FormControl fullWidth={props.fullWidth} size={props.size}>
       {label && <InputLabel>{label}</InputLabel>}
-      <Select
-        {...props}
-        value={value}
-        onChange={() => {
-          handleChange;
-        }}
-        label={label}
-      >
+      <Select {...props} value={value} onChange={(e) => handleChange} label={label}>
         {options.map((option) => (
           <MenuItem key={option.value} value={option.value}>
             {option.label}

@@ -28,8 +28,9 @@
     "yup": "^1.6.1"
   },
   "scripts": {
-     "start": "craco start",
+    "start": "craco start",
     "build": "craco build",
+    "formatter": "prettier --write .",
     "test": "craco test"
   },
   "eslintConfig": {
