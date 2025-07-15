@@ -1,5 +1,5 @@
 import React from 'react';
-import Grid from "@material-ui/core/Grid";
+import Grid from '@material-ui/core/Grid';
 import { Box, Typography } from '@mui/material';
 import { Button } from '../components/ui/Button/Button';
 import { Checkbox } from '../components/ui/Checkbox/Checkbox';

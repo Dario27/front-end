@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { AppBar as MuiAppBar, IconButton, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -22,7 +21,7 @@ export const AppBar: React.FC<AppBarProps> = ({ open, toggleDrawer }) => {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" noWrap component="div">
-          My Application
+          My Web Application
         </Typography>
       </Toolbar>
     </MuiAppBar>

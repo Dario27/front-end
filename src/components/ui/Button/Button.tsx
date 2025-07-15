@@ -10,7 +10,7 @@ export const Button: React.FC<ButtonProps> = ({ children, loading, ...props }) =
     <MuiButton
       {...props}
       disabled={loading || props.disabled}
-    //   startIcon={loading ? <CircularProgress size={20} /> : props.startIcon}
+      //   startIcon={loading ? <CircularProgress size={20} /> : props.startIcon}
     >
       {children}
     </MuiButton>

@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  useReactTable,
-  getCoreRowModel,
-  ColumnDef,
-  flexRender,
-} from '@tanstack/react-table';
+import { useReactTable, getCoreRowModel, ColumnDef, flexRender } from '@tanstack/react-table';
 import {
   Table as MuiTable,
   TableBody,
@@ -35,10 +30,7 @@ export function Table<T>({ data, columns }: TableProps<T>) {
             <TableRow key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
                 <TableCell key={header.id}>
-                  {flexRender(
-                    header.column.columnDef.header,
-                    header.getContext()
-                  )}
+                  {flexRender(header.column.columnDef.header, header.getContext())}
                 </TableCell>
               ))}
             </TableRow>
