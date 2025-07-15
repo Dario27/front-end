@@ -29,7 +29,9 @@ export const Dropdown: React.FC<DropdownProps> = ({ options, label, ...props }) 
       <Select
         {...props}
         value={value}
-        onChange={handleChange}
+        onChange={() => {
+          handleChange;
+        }}
         label={label}
       >
         {options.map((option) => (
